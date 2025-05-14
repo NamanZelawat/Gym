@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "gym"
+version = "0.1.0"
+description = ""
+authors = ["NamanZelawat <namanzelawat@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+tensorflow-io-gcs-filesystem = "0.27.0"
+pandas = "2.0.3"
+keras = "2.10.0"
+scikit-learn = "1.2.0"
+tensorflow = "2.10"
+jupyterlab = "^4.3.6"
+matplotlib = "^3.10.1"
+torch = {version = "^2.6.0", source = "pytorch"}
+torchvision = {version = "^0.21.0", source = "pytorch"}
+torchaudio = {version = "^2.6.0", source = "pytorch"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu126"
+priority = "supplemental"
