@@ -18,6 +18,8 @@ torch = {version = "^2.6.0", source = "pytorch"}
 torchvision = {version = "^0.21.0", source = "pytorch"}
 torchaudio = {version = "^2.6.0", source = "pytorch"}
 torchmetrics = "^1.7.1"
+tqdm = "^4.67.1"
+ipywidgets = "^8.1.7"
 
 
 [build-system]
