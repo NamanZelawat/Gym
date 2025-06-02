@@ -1,3 +1,4 @@
 .idea
 pytorch/data
 pytorch/models
+.ipynb_checkpoints/
