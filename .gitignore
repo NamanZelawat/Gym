@@ -4,3 +4,6 @@ pytorch/data
 pytorch/models
 .ipynb_checkpoints/
 pytorch/runs
+pytorch/__pycache__
+pytorch/logs
+pytorch/going_modular/__pycache__
