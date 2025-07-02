@@ -1,34 +1,32 @@
-[tool.poetry]
+[project]
 name = "gym"
 version = "0.1.0"
-description = ""
-authors = ["NamanZelawat <namanzelawat@gmail.com>"]
-readme = "README.md"
+description = "Add your description here"
+requires-python = ">=3.10"
+dependencies = [
+    "tqdm>=4.66.5",
+    "torch>=2.6.0",
+    "torchvision>=0.22.1",
+    "torchaudio>=2.7.1",
+    "jupyterlab>=4.4.3",
+    "pandas>=2.3.0",
+    "polars>=1.31.0",
+    "datasets>=3.6.0",
+    "matplotlib>=3.10.3",
+    "transformers>=4.53.0",
+    "torchinfo>=1.8.0",
+    "opencv-python>=4.11.0.86",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.10,<3.11"
-tensorflow-io-gcs-filesystem = "0.27.0"
-pandas = "2.0.3"
-keras = "2.10.0"
-scikit-learn = "1.3.1"
-tensorflow = "2.10"
-jupyterlab = "^4.3.6"
-matplotlib = "^3.10.1"
-torch = {version = "^2.6.0", source = "pytorch"}
-torchvision = {version = "^0.21.0", source = "pytorch"}
-torchaudio = {version = "^2.6.0", source = "pytorch"}
-torchmetrics = "^1.7.1"
-tqdm = "^4.67.1"
-ipywidgets = "^8.1.7"
-mlxtend = "^0.23.4"
-torchinfo = "^1.8.0"
+[tool.uv.sources]
+torch = {index = "pytorch"}
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
 
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[[tool.poetry.source]]
+[[tool.uv.index]]
 name = "pytorch"
 url = "https://download.pytorch.org/whl/cu126"
-priority = "supplemental"
+default = true

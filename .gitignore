@@ -7,3 +7,4 @@ pytorch/runs
 pytorch/__pycache__
 pytorch/logs
 pytorch/going_modular/__pycache__
+.venv/

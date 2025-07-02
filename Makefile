@@ -1,2 +1,2 @@
 run:
-	poetry run jupyter lab --no-browser
+	uv run --active jupyter lab --no-browser
