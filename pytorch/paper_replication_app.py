@@ -9,8 +9,8 @@ st.write("## Upload an image")
 st.write("Upload an image to classify from pizza, steak, or sushi. Only 3 categories are supported.")
 uploaded_file = st.file_uploader("Upload an image", type=['png', 'jpg', 'jpeg'])
 
-st.write("## Prediction")
 if uploaded_file is not None:
+    st.write("## Prediction")
     image = Image.open(uploaded_file)
     st.image(image, caption='Uploaded Image', width=250)
     st.write("## Result")
