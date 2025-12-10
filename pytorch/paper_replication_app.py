@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-st.title("Vision Transformer Paper Replication")
+st.title("ViT Paper Replication")
 
 st.write("This is a replication of the ViT paper using PyTorch.")
 
